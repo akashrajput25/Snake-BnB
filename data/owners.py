@@ -1,7 +1,7 @@
 import datetime
 import mongoengine
 
-class Owners(mongoengine.Document):
+class Owner(mongoengine.Document):
     registered_date = mongoengine.DateTimeField(default= datetime.datetime.now)
     name = mongoengine.StringField(required = True)
     email = mongoengine.StringField(required = True)
