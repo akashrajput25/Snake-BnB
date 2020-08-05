@@ -1,5 +1,7 @@
+import datetime
 import mongoengine
 
+from data.bookings import Booking
 class Cage(mongoengine.Document):
     registered_date = mongoengine.DateTimeField(default = datetime.datetime.now)
     name = mongoengine.StringField(required = True)
